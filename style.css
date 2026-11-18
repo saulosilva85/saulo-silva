@@ -54,7 +54,9 @@ h2 { margin-top: 32px; margin-bottom: 4px; font-size: 1.2rem; }
 table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.95rem; }
 th, td { border: 1px solid #d0d7de; padding: 8px 10px; text-align: left; vertical-align: top; }
 th { background: #f6f8fa; }
-.formacao th { text-align: center; }
+.formacao th,
+.trajetoria th,
+.base-tecnica th { text-align: center; }
 
 .nota {
   background: #fff8c5;
