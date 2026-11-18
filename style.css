@@ -34,6 +34,20 @@ body {
 
 .lateral nav a:hover { background: #eaeef2; }
 
+/* Título do grupo no menu (ex.: Carreira) */
+.lateral nav .grupo {
+  margin: 16px 0 4px;
+  padding: 0 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #59636e;
+}
+
+/* Itens dentro de um grupo ficam recuados */
+.lateral nav a.sub { padding-left: 24px; }
+
 .lateral nav a.ativo {
   background: #ddf4ff;
   color: #0969da;
@@ -56,7 +70,10 @@ th, td { border: 1px solid #d0d7de; padding: 8px 10px; text-align: left; vertica
 th { background: #f6f8fa; }
 .formacao th,
 .trajetoria th,
-.base-tecnica th { text-align: center; }
+.base-tecnica th,
+.atividades th,
+.certificacoes th,
+.cursos th { text-align: center; }
 
 .nota {
   background: #fff8c5;
@@ -80,5 +97,7 @@ footer { margin-top: 48px; color: #59636e; font-size: 0.85rem; }
   }
   .lateral .cargo { margin-bottom: 12px; }
   .lateral nav a { display: inline-block; }
+  .lateral nav .grupo { display: none; }
+  .lateral nav a.sub { padding-left: 12px; }
   main { margin-left: 0; padding: 24px 20px; }
 }
