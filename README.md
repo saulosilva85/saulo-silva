@@ -8,4 +8,6 @@ Estrutura:
 
 - `index.html`: página "Sobre mim"
 - `pdi.html`: página do PDI
+- `atividades.html`: Carreira > Atividades
+- `capacitacoes.html`: Carreira > Capacitações (certificações e cursos)
 - `style.css`: visual compartilhado pelas duas páginas (inclui o menu lateral)
