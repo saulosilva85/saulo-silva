@@ -78,3 +78,6 @@ footer { margin-top: 48px; color: #59636e; font-size: 0.85rem; }
   .lateral nav a { display: inline-block; }
   main { margin-left: 0; padding: 24px 20px; }
 }
+
+/* Títulos de seções seguintes na mesma página */
+h1.secao { margin-top: 48px; }
