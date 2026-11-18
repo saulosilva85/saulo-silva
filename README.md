@@ -9,4 +9,5 @@ Estrutura:
 - `index.html`: página "Sobre mim"
 - `pdi.html`: página do PDI
 - `atividades-e-capacitacoes.html`: Carreira > Atividades e Capacitações (atividades, certificações e cursos)
-- `style.css`: visual compartilhado pelas duas páginas (inclui o menu lateral)
+- `style.css`: visual compartilhado por todas as páginas (menu lateral e cores dos modos claro/escuro)
+- `tema.js`: botão de modo claro/escuro
