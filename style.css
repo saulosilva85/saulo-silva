@@ -36,6 +36,9 @@ body {
 
 /* Menu expansível (ex.: Carreira) */
 .lateral nav summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 8px 12px;
   margin-bottom: 4px;
   border-radius: 6px;
@@ -43,15 +46,19 @@ body {
   list-style: none;
 }
 .lateral nav summary::-webkit-details-marker { display: none; }
-.lateral nav summary::before {
-  content: "▸";
-  display: inline-block;
-  width: 16px;
+/* Seta ">" à direita do nome; gira para baixo quando aberto */
+.lateral nav summary::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #59636e;
+  border-bottom: 2px solid #59636e;
+  transform: rotate(-45deg);
   transition: transform 0.15s;
 }
-.lateral nav details[open] > summary::before { transform: rotate(90deg); }
+.lateral nav details[open] > summary::after { transform: rotate(45deg); }
 .lateral nav summary:hover { background: #eaeef2; }
-.lateral nav details a { padding-left: 28px; }
+.lateral nav details a { padding-left: 24px; }
 
 .lateral nav a.ativo {
   background: #ddf4ff;
