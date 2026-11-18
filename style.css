@@ -1,0 +1,80 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #1f2328;
+  background: #ffffff;
+}
+
+/* ===== Menu lateral ===== */
+.lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  padding: 32px 20px;
+  background: #f6f8fa;
+  border-right: 1px solid #d0d7de;
+}
+
+.lateral .nome { margin: 0; font-size: 1.15rem; font-weight: 600; }
+.lateral .cargo { margin: 4px 0 28px; color: #59636e; font-size: 0.9rem; }
+
+.lateral nav a {
+  display: block;
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  color: #1f2328;
+  text-decoration: none;
+}
+
+.lateral nav a:hover { background: #eaeef2; }
+
+.lateral nav a.ativo {
+  background: #ddf4ff;
+  color: #0969da;
+  font-weight: 600;
+}
+
+/* ===== Conteúdo ===== */
+main {
+  margin-left: 240px;
+  max-width: 820px;
+  padding: 40px 48px;
+}
+
+h1 { margin-top: 0; border-bottom: 1px solid #d0d7de; padding-bottom: 8px; }
+h2 { margin-top: 32px; margin-bottom: 4px; font-size: 1.2rem; }
+
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.95rem; }
+th, td { border: 1px solid #d0d7de; padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #f6f8fa; }
+
+.nota {
+  background: #fff8c5;
+  border: 1px solid #d4a72c;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+footer { margin-top: 48px; color: #59636e; font-size: 0.85rem; }
+
+/* ===== Celular: menu vai para o topo ===== */
+@media (max-width: 700px) {
+  .lateral {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-right: none;
+    border-bottom: 1px solid #d0d7de;
+  }
+  .lateral .cargo { margin-bottom: 12px; }
+  .lateral nav a { display: inline-block; }
+  main { margin-left: 0; padding: 24px 20px; }
+}

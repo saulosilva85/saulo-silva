@@ -4,4 +4,8 @@ Página pessoal com meu "Sobre mim" e meu PDI (Plano de Desenvolvimento Individu
 
 Publicada via GitHub Pages em: https://saulosilva85.github.io/saulo-silva/
 
-Para editar, basta alterar o arquivo `index.html`.
+Estrutura:
+
+- `index.html`: página "Sobre mim"
+- `pdi.html`: página do PDI
+- `style.css`: visual compartilhado pelas duas páginas (inclui o menu lateral)
